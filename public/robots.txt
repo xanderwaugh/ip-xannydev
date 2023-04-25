@@ -1,0 +1,12 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /404/
+Disallow: /404/*
+Disallow: /404
+
+# Host
+Host: https://xanny.dev/
+
+# Sitemaps
+Sitemap: https://xanny.dev/sitemap.xml

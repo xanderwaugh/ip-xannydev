@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --xanny-accent: #fdfd96;
+  --xanny-bg: #a8daf9;
+  --xanny-text: #eaeaea;
+
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body {
+    @apply min-h-screen bg-xanny-bg font-normal text-xanny-text antialiased scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-zinc-500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+    -webkit-text-size-adjust: 100%;
+    -ms-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern";
+  }
+  input[type="file"] {
+    @apply hidden;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.75rem;
+    background: #888;
+  }
+  img {
+    content-visibility: auto;
+  }
+}
+
+@layer components {
+  .button {
+    @apply cursor-pointer rounded-md border border-[#121212] bg-xanny-bg px-6 py-2 text-sm font-bold uppercase tracking-widest text-black/70 antialiased transition-all hover:border-[#eaeaea]/60 hover:text-[#eaeaea];
+  }
+}
+
+@layer utilities {
+  .safe-top {
+    padding-top: calc(env(safe-area-inset-top));
+  }
+  .safe-bottom {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+  }
+}

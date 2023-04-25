@@ -1,0 +1,29 @@
+
+dist
+.solid
+.output
+.vercel
+.netlify
+netlify
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+
+/dist
+
+# Temp
+gitignore
+
+# System Files
+.DS_Store
+Thumbs.db
+solid-xannydev.code-workspace
+.todo
+ip-xannydev.code-workspace

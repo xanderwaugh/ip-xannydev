@@ -1,0 +1,48 @@
+{
+  "name": "ip-solid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "solid-start build",
+    "dev": "solid-start dev",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.svelte,.solid src",
+    "start": "solid-start start"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.4",
+    "@solidjs/router": "^0.8.2",
+    "@tanstack/solid-query": "^4.29.5",
+    "sharp": "^0.32.0",
+    "solid-js": "^1.7.3",
+    "solid-start": "^0.2.26",
+    "solid-start-vercel": "^0.2.26",
+    "solid-use": "^0.7.0",
+    "svgo": "^3.0.2",
+    "undici": "^5.22.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/eslint": "^8.37.0",
+    "@types/node": "^18.16.0",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-solid": "^0.12.1",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "solid-start-node": "^0.2.26",
+    "tailwind-scrollbar": "^3.0.0",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^4.9.5",
+    "unplugin-fonts": "^1.0.3",
+    "vite": "^4.3.2",
+    "vite-plugin-image-optimizer": "^1.1.3"
+  }
+}
